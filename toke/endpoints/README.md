@@ -10,21 +10,21 @@ Toke's API is organized into 8 groups, each handling a specific area of the appl
 
 ## API groups
 
-| Group                               | api\_group\_id | Base path                                | Description                                              |
-| ----------------------------------- | -------------- | ---------------------------------------- | -------------------------------------------------------- |
-| [Authentication](authentication.md) | MxyG7FML       | `/auth`                                  | Signup, login, and session management                    |
-| Users                               | EXX1OJAQ       | `/user`                                  | User accounts, profiles, and moderation                  |
-| [Onboarding](onboarding.md)         | opDK-bNN       | `/onboarding`                            | Handles the onboarding process                           |
-| Reviews                             | X4YLDfCF       | `/review`, `/review_report`              | Product and dispensary reviews, comments, votes, reports |
-| Subscriptions                       | ewOU18cD       | `/user_subscription`                     | User subscription management                             |
-| [Credits](credits.md)               | r5zOfm\_5      | `/user_credit`                           | Credit transactions and balance management               |
-| Baskets                             | TijoL6y3       | `/basket`, `/basket_item`                | Shopping baskets and line items                          |
-| Health                              | zqnm44C2       | `/user_health`, `/user_medication`       | Health profiles and medications                          |
-| Addresses                           | QF1GFoad       | `/address`                               | Delivery and billing addresses                           |
-| [Business](business.md)             | rOS4jyzC       | `/business`, `/business-sync`, `/nearby` | Business snapshots                                       |
-| [Password reset](password-reset.md) | 6hazS0TY       | `/reset-code`, `/update_password`        | Send OTP and reset password                              |
-| [Strains](strains.md)               | oGtZdRL8       | /budhub                                  | Get strains filtered                                     |
-| [Products](products.md)             | oGtZdRL8       | /budhub                                  | Get products filtered                                    |
+| Group                                         | api\_group\_id | Base path                                | Description                                              |
+| --------------------------------------------- | -------------- | ---------------------------------------- | -------------------------------------------------------- |
+| [Authentication](authentication.md)           | MxyG7FML       | `/auth`                                  | Signup, login, and session management                    |
+| Users                                         | EXX1OJAQ       | `/user`                                  | User accounts, profiles, and moderation                  |
+| [Onboarding](onboarding.md)                   | opDK-bNN       | `/onboarding`                            | Handles the onboarding process                           |
+| Reviews                                       | X4YLDfCF       | `/review`, `/review_report`              | Product and dispensary reviews, comments, votes, reports |
+| Subscriptions                                 | ewOU18cD       | `/user_subscription`                     | User subscription management                             |
+| [Credits](/broken/pages/ikO13OeswgMou4sCqQYX) | r5zOfm\_5      | `/user_credit`                           | Credit transactions and balance management               |
+| Baskets                                       | TijoL6y3       | `/basket`, `/basket_item`                | Shopping baskets and line items                          |
+| Health                                        | zqnm44C2       | `/user_health`, `/user_medication`       | Health profiles and medications                          |
+| Addresses                                     | QF1GFoad       | `/address`                               | Delivery and billing addresses                           |
+| [Business](business.md)                       | rOS4jyzC       | `/business`, `/business-sync`, `/nearby` | Business snapshots                                       |
+| [Password reset](password-reset.md)           | 6hazS0TY       | `/reset-code`, `/update_password`        | Send OTP and reset password                              |
+| [Strains](strains.md)                         | oGtZdRL8       | /budhub                                  | Get strains filtered                                     |
+| [Products](products.md)                       | oGtZdRL8       | /budhub                                  | Get products filtered                                    |
 
 ***
 

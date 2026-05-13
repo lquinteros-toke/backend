@@ -25,26 +25,27 @@ Core user accounts, personal information, delivery addresses, and health profile
 
 Product and dispensary review system with properties, comments, votes, and moderation.
 
-| Table                                                                          | Description                                                                |
-| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| [review](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)               | Main review record linking a user to a BudHub product or business          |
-| [review\_feeling](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)      | Feelings experienced from a product, with intensity rating                 |
-| [review\_use](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)          | Purposes or contexts the product was used for, with intensity rating       |
-| [review\_profile](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)      | Flavor and aroma profiles identified in the product, with intensity rating |
-| [review\_side\_effect](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9) | Negative side effects experienced, with intensity rating                   |
-| [review\_comment](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)      | User comments on reviews, supporting threaded replies                      |
-| [review\_report](/broken/pages/96cfd469d44bf403eee03c3b9eda59d832901cb9)       | Reports filed against reviews or comments for moderation                   |
+| Table                                                 | Description                                                                |
+| ----------------------------------------------------- | -------------------------------------------------------------------------- |
+| [review](reviews.md#review)                           | Main review record linking a user to a BudHub product or business          |
+| [review\_feeling](reviews.md#review_feeling)          | Feelings experienced from a product, with intensity rating                 |
+| [review\_use](reviews.md#review_use)                  | Purposes or contexts the product was used for, with intensity rating       |
+| [review\_profile](reviews.md#review_profile)          | Flavor and aroma profiles identified in the product, with intensity rating |
+| [review\_side\_effect](reviews.md#review_side_effect) | Negative side effects experienced, with intensity rating                   |
+| [review\_comment](reviews.md#review_comment)          | User comments on reviews, supporting threaded replies                      |
+| [review\_report](reviews.md#review_report)            | Reports filed against reviews or comments for moderation                   |
 
 ### Commerce
 
 Shopping baskets, subscriptions, and credit transactions.
 
-| Table                                                                  | Description                                                                  |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [basket](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79)       | Shopping basket tied to a user and a specific BudHub seller                  |
-| [basket\_item](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79) | Individual line items in a basket, each referencing a BudHub product variant |
-| [user\_subscription](commerce.md#user_subscription)                    | Active subscription linking a user to a BudHub plan variant                  |
-| [user\_credit](commerce.md#user_credit)                                | Individual credit transactions with amount, source, and status               |
+| Table                                                                                          | Description                                                                  |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [basket](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79)                               | Shopping basket tied to a user and a specific BudHub seller                  |
+| [basket\_item](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79)                         | Individual line items in a basket, each referencing a BudHub product variant |
+| [user\_subscription](/broken/pages/74462f4a3c54135329ac66c9672b428665cc6e3d#user_subscription) | Active subscription linking a user to a BudHub plan variant                  |
+| [user\_credit](/broken/pages/74462f4a3c54135329ac66c9672b428665cc6e3d#user_credit)             | Individual credit transactions with amount, source, and status               |
+| [pending\_credit](commerce.md#pending_credit)                                                  | Credits that have been earned but not yet activated                          |
 
 ### Lookups
 

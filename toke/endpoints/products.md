@@ -278,7 +278,7 @@ Returns a paginated array of cannabis products with full hydration.
 Generic proxy endpoint that forwards the request to BudHub's single cannabis product endpoint. Returns full detail for one product, including business info and per-variant images.
 
 Called on: Gateway directly from Flutter\
-Auth: gateway\_token
+Auth: `gateway_token`
 
 **Headers:**
 
