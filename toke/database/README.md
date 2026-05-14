@@ -39,13 +39,16 @@ Product and dispensary review system with properties, comments, votes, and moder
 
 Shopping baskets, subscriptions, and credit transactions.
 
-| Table                                                                                          | Description                                                                  |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [basket](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79)                               | Shopping basket tied to a user and a specific BudHub seller                  |
-| [basket\_item](/broken/pages/fafd7e326c5f7d1c0306ff218c9b83665f32bc79)                         | Individual line items in a basket, each referencing a BudHub product variant |
-| [user\_subscription](/broken/pages/74462f4a3c54135329ac66c9672b428665cc6e3d#user_subscription) | Active subscription linking a user to a BudHub plan variant                  |
-| [user\_credit](/broken/pages/74462f4a3c54135329ac66c9672b428665cc6e3d#user_credit)             | Individual credit transactions with amount, source, and status               |
-| [pending\_credit](commerce.md#pending_credit)                                                  | Credits that have been earned but not yet activated                          |
+| Table                                                                | Description                                                                                                          |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| [billing\_period](commerce.md#billing_period)                        | Catalog of billing periods (monthly, annual, lifetime).                                                              |
+| [subscription\_plan](commerce.md#subscription_plan)                  | Abstract plans (Premium, Pro). Universal across countries. No pricing here.                                          |
+| [subscription\_plan\_country](commerce.md#subscription_plan_country) | Per-country economic context for a plan. Holds the fees (order fee, service fee %, cap) for a (plan, country) combo. |
+| [subscription\_plan\_price](commerce.md#subscription_plan_price)     | Actual price for a (plan, country, billing period) combo.                                                            |
+| [user\_subscription](commerce.md#user_subscription)                  | A user's subscription, active or historical. Tracks status, period dates, expiry, etc.                               |
+| [user\_subscription\_event](commerce.md#user_subscription_event)     | Append-only audit ledger. One row per state change.                                                                  |
+| [user\_credit](commerce.md#user_credit)                              | Individual credit transactions with amount, source, and status                                                       |
+| [pending\_credit](commerce.md#pending_credit)                        | Credits that have been earned but not yet activated                                                                  |
 
 ### Lookups
 
