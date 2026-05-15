@@ -97,6 +97,21 @@ The combination of `subscription_plan_country_id` and `billing_period_id` is uni
 `stripe_price_id` is never exposed to the client. The checkout flow accepts only the local `subscription_plan_price_id` and resolves the Stripe price server-side.
 {% endhint %}
 
+## subscription\_plan\_benefit
+
+One row per benefit line shown inside a plan card. Ordered, with optional highlighting for benefits new to this tier.
+
+| Field                  | Type      | Description                                                                                                       |
+| ---------------------- | --------- | ----------------------------------------------------------------------------------------------------------------- |
+| `id`                   | Integer   | Auto-generated unique identifier                                                                                  |
+| `created_at`           | Timestamp | When the price was created. Private visibility                                                                    |
+| `updated_at`           | Timestamp | When the row was last modified                                                                                    |
+| `subscription_plan_id` | Integer   | The plan this benefit belongs to. References Toke's `subscription_plan` table                                     |
+| `label`                | Text      | The benefit text. Supports inline `**bold**` for emphasized phrases                                               |
+| `is_highlighted`       | Boolean   | If `true`, rendered with orange checkmark and bold text (used for benefits new in this tier). Defaults to `false` |
+| `sort_order`           | Integer   | Display order within the plan card. Lower numbers shown first                                                     |
+| `is_active`            | Boolean   | Whether the benefit is shown. Defaults to `true`                                                                  |
+
 ## user\_subscription
 
 A user's active or historical subscription. A user can have many rows over time but typically only one is `active` at any moment. Several fields are denormalized from `subscription_plan_price` so that order-time lookups (for fees and tier) avoid a 3-hop join.

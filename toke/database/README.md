@@ -45,6 +45,7 @@ Shopping baskets, subscriptions, and credit transactions.
 | [subscription\_plan](commerce.md#subscription_plan)                  | Abstract plans (Premium, Pro). Universal across countries. No pricing here.                                          |
 | [subscription\_plan\_country](commerce.md#subscription_plan_country) | Per-country economic context for a plan. Holds the fees (order fee, service fee %, cap) for a (plan, country) combo. |
 | [subscription\_plan\_price](commerce.md#subscription_plan_price)     | Actual price for a (plan, country, billing period) combo.                                                            |
+| [subscription\_plan\_benefit](commerce.md#subscription_plan_benefit) | List of benefits per plan                                                                                            |
 | [user\_subscription](commerce.md#user_subscription)                  | A user's subscription, active or historical. Tracks status, period dates, expiry, etc.                               |
 | [user\_subscription\_event](commerce.md#user_subscription_event)     | Append-only audit ledger. One row per state change.                                                                  |
 | [user\_credit](commerce.md#user_credit)                              | Individual credit transactions with amount, source, and status                                                       |
@@ -64,6 +65,6 @@ Local reference tables used across the application.
 
 Information pulled from BudHub and stored in Toke
 
-| Table              | Description                                         |
-| ------------------ | --------------------------------------------------- |
-| business\_snapshot | Consumer-optimized snapshot of BudHub business data |
+| Table                                                       | Description                                         |
+| ----------------------------------------------------------- | --------------------------------------------------- |
+| [business\_snapshot](budhub-snapshots.md#business_snapshot) | Consumer-optimized snapshot of BudHub business data |
